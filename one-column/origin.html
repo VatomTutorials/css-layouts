@@ -1,0 +1,83 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A skeleton app">
+
+    <link id="favicon"
+          rel="icon"
+          href="https://cdn.glitch.com/2a1887db-3961-4424-a9a3-b4a5086e9f26%2FIcon-App.png?v=1617677673315"
+          type="image/x-icon">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" media=    "screen and (min-width: 580px) and (min-height: 512px)" href="/style_normal.css">
+    <link rel="stylesheet" media="not screen and (min-width: 580px) and (min-height: 512px)" href="/style_constrained.css">
+
+    <!-- import the markdown rendering module -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    
+    <!-- import the cookie parser module -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client_side.js" defer></script>
+    
+  </head>
+  
+  <body>
+
+    <div class="p0_pg_gp full_width">
+      <div class="p1_hdr_gp" id="ThePageHdr">
+        <div class="p2_hdr_label_gp" include-nested-html="/h?h=hdr_label_guts">
+          <!-- hdr_label_guts.html -->
+        </div>
+        <div class="p2_hdr_main_menu">
+          <div class="menu_bg_stripe"></div>
+          <a href="#" class="menu_item_moored" >Home</a>            &nbsp;
+          <a href="/consumers"                 >For Consumers</a>   &nbsp;
+          <a href="/publishers"                >For Publishers</a>  &nbsp;
+          <a href="/docs"                      >Docs</a>
+        </div>
+      </div>
+
+      <div class="p1_torso_flexitem main_scroll" id="ThePageTorso">
+        <div class="content_section">
+        
+          <p>body : p0_grid : <b>main_scroll</b> (aka p1_torso)</p>
+          <ol style="font-size: 14px">
+            <!--  -->
+            <li/> - hoohah <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <!--  -->
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <!--  -->
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <!--  -->
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+            <li/> - <li/> - <li/> - <li/>
+          </ol>
+        </div> <!-- content_section -->
+      </div> <!-- main_scroll -->
+      
+      <div class="p1_ftr_gp" id="ThePageFtr" include-nested-html="/h?h=ftr_guts">
+        <!-- ftr_guts.html -->
+      </div> <!-- p1_ftr -->
+      
+    </div> <!-- p0_pg_grid -->
+    
+  </body>
+</html>

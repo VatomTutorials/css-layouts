@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A layout example">
+    
+    <!-- import the webpage's stylesheet -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    
+    <style>
+			body {
+				background-color: white;
+			}
+
+			.page_frame {
+				height: 100vh;
+				width: 100vw;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.page_header{
+				overflow: hidden;
+				height: 64px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+
+			.page_torso{
+				height: 1fr;
+				overflow: auto;
+			}
+
+			.page_footer{
+				overflow: hidden;
+				height: 64px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+    
+			.torso_flexitem{
+				flex: 1 1 auto;
+			}
+
+			.torso_scroll_container {
+				margin-left: 12px;
+				overflow-y: auto;
+			}
+
+			.content_section {
+				padding: 20px;
+			}
+			
+			.header_flexitem{
+				flex: 0 1 auto;
+			}
+
+			.footer_flexitem{
+				flex: 0 1 auto;
+			}
+    </style>
+  </head>
+  
+  <body>
+
+		<div class="page_frame"">
+
+			<div class="page_header">
+				<div class="header_flexitem">
+					<a href="#" >Header Link A</a>
+				</div> <!-- header_flexitem -->
+				<div class="header_flexitem">
+					<a href="#" >Header Link B</a>
+				</div> <!-- header_flexitem -->
+				<div class="header_flexitem">
+					<a href="#" >Header Link C</a>
+				</div> <!-- header_flexitem -->
+			</div> <!-- page_header -->
+
+			<div class="torso_flexitem torso_scroll_container">
+				<div class="content_section">
+					<p>body : p0_grid : <b>main_scroll</b> (aka p1_torso)</p>
+					<ol style="font-size: 14px">
+						<!--  -->
+						<li/> - v 002 <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<!--  -->
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<!--  -->
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<!--  -->
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+						<li/> - <li/> - <li/> - <li/>
+					</ol>
+				</div> <!-- content_section -->
+			</div> <!-- page_torso main_scroll -->
+
+			<div class="page_footer">
+				<div class="header_flexitem">
+					<a href="#" >Footer Link A</a>
+				</div> <!-- header_flexitem -->
+				<div class="header_flexitem">
+					<a href="#" >Footer Link B</a>					
+				</div> <!-- header_flexitem -->
+				<div class="header_flexitem">
+					<a href="#" >Footer Link C</a>
+				</div> <!-- header_flexitem -->
+			</div> <!-- page_footer -->
+			
+		</div> <!-- page_frame -->
+     
+  </body>
+</html>
